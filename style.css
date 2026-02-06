@@ -1,0 +1,585 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+:root {
+    /* --main-bg-color: #14120B; */
+    --main-bg-color: #14120B;
+    --secoundary-color: #CCCCCC;
+    --text-color: #FFFFFF;
+}
+
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    padding: 0rem 7rem 0rem 7rem;
+}
+
+nav {
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.9rem 0;
+    top: 0;
+    position: sticky;
+}
+
+.navSection {
+    display: flex;
+}
+
+.navCenter {
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+#SigninBtn {
+    border: 1px solid rgba(255, 255, 255, 0.508);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 21px;
+    font-size: 14px;
+    padding: 5.9px 10px;
+}
+
+#DownloadBtn {
+    background-color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    margin-left: 10px;
+    border-radius: 17px;
+    padding: 5.9px 10px;
+}
+
+.heroSection {
+    padding: 105px 0px 63px;
+}
+
+.heroText {
+    margin-bottom: 21px;
+    font-size: 1.8rem;
+    letter-spacing: -.0125em;
+}
+
+.heroBtn {
+    padding: 13.350px 25.750px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+    border: 1px solid var(--secoundary-color);
+    font-size: 1rem;
+    width: fit-content;
+    cursor: pointer;
+    line-height: 1;
+    background-color: var(--text-color);
+    color: var(--main-bg-color);
+    margin-bottom: 4rem;
+}
+
+.heroImage {
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.heroImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.trustedBySection {
+    width: 100%;
+    height: 5rem;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.trustedByText {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 21px;
+}
+
+.trustedByLogos {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.8rem;
+    height: 100%;
+}
+
+.trustedByLogo {
+    background-color: #1B1913;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    padding: 20px;
+    height: 100%;
+}
+
+.trustedByLogo img {
+    width: 100%;
+    height: 90%;
+}
+
+.featureSection {
+    width: 100%;
+    padding: 80px 0;
+    display: grid;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.featureSectionBox {
+    background-color: #1B1913;
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.featureSectionText {
+    flex: 1;
+    max-width: 380px;
+    width: fit-content;
+}
+
+.featureSectionText h2 {
+    font-size: 25px;
+    color: white;
+}
+
+.featureSectionText p {
+    font-size: 21px;
+    color: #a0a0a0;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.featureSectionText a {
+    color: #ff5a1f;
+    text-decoration: none;
+}
+
+.featureSectionImage {
+    flex: 1.4;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.featureSectionImage img {
+    width: 100%;
+    max-width: 850px;
+    border-radius: 3px;
+
+}
+
+.testimonialsSection{
+    margin-bottom: 200px;
+}
+
+.testimonialHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 3rem;
+}
+.testimonialCard {
+    background-color: #1B1913;
+    border-radius: 3px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+     min-height: 240px;
+}
+
+.testimonialQuote {
+    font-size: 15px;
+    line-height: 1.65;
+    color: #e6e6e6;
+}
+
+.aboutandimage {
+    margin-top: auto; 
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.testimonialCards {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    align-items: stretch;
+}
+
+.testimonialImage {
+    width: 40px;
+    height: 40px;
+}
+
+.testimonialImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.testimonialName {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.testimonialRole {
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+.about{
+    display: grid;
+    gap: 5px;
+}
+
+.useCasesSection {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 10px 0px;
+}
+
+.useCasesHeading {
+    font-size: 27px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.useCasesCards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.useCasesCard {
+    background: #1b1913;
+    border-radius: 3px;
+    padding: 15px 17px;
+    display: flex;
+    flex-direction: column;
+    min-height: 550px;
+}
+
+.useCasesCardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.useCasesCardTitle {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.useCasesCardText {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #a3a3a3;
+}
+
+.useCasesCardLink {
+    margin-top: 6px;
+    font-size: 15px;
+    color: #ff5a1f;
+    text-decoration: none;
+    width: fit-content;
+}
+.useCasesCardImage {
+    margin-top: 20px;
+    height: 80%;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #2a2a2a;
+}
+
+.useCasesCardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.changelogSection {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.changelogHeading {
+    font-size: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.changelogGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.changelogCard {
+    background: #1b1913;
+    border-radius: 5px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-height: 120px;
+}
+
+.changelogMeta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.changelogBadge {
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid #3a3a3a;
+    font-size: 13px;
+    color: #e5e7eb;
+}
+
+.changelogText {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+.changelogLink {
+    color: #ff5a1f;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.teamAboutCard {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 17px;
+    background: #1b1913;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    align-items: stretch;
+    margin-bottom: 200px;
+}
+
+.teamAboutContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 30px 0px 0px;
+}
+
+.teamAboutText {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #ffffff;
+    max-width: 420px;
+    margin-bottom: 18px;
+}
+
+.teamAboutLink {
+    color: #ff5a1f;
+    font-size: 16px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.teamAboutImage {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.teamAboutImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.highlightBox {
+    width: 100%;
+    background-color: #1B1913;
+    padding: 80px 24px;
+}
+
+.highlightSection {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.highlightContainer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 28px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 10px;
+}
+
+.highlightSticky {
+    position: relative;
+    width: 50%;
+}
+
+.highlightLabel {
+    position: sticky;
+    top: 120px;
+    font-size: 16px;
+    color: #e5e7eb;
+}
+
+.highlightContent {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.highlightCard {
+    background: #1b1913;
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.highlightTitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.highlightText {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #a3a3a3;
+}
+
+.highlightMeta {
+    font-size: 14px;
+    color: #9ca3af;
+    margin-top: 8px;
+}
+
+.highlightMore {
+    margin-top: 24px;
+    font-size: 16px;
+    color: #ff5a1f;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.ctaWrap {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.ctaTitle {
+    font-size: 64px;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+}
+
+.ctaPrimary {
+    padding: 14px 30px;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footerWrap {
+    padding: 96px 64px 32px;
+}
+
+.footerMain {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 72px;
+}
+
+.footerCol {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footerHead {
+    font-size: 14px;
+    color: #9ca3af;
+    margin-bottom: 12px;
+}
+
+.footerCol a {
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footerBar {
+    max-width: 1440px;
+    margin: 72px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.langPill {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.06);
+    color: #ffffff;
+}
